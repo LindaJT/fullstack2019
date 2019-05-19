@@ -1,0 +1,16 @@
+    
+title tehtava 0.6
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over selain
+data lahetetaan 
+JSON-merkkijonona
+end note over 
+
+palvelin->selain: HTTP 201 created 
+note over palvelin
+palvelin vastaa 
+statuskoodilla
+201 created
+end note over 
+
+palvelin->selain: palvelin-->selain: [{ content: "HTML on helppoa", date: "2019-01-01" }, ...]
